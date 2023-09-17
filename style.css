@@ -1,0 +1,53 @@
+
+body{
+  background-color: rgb(58, 58, 58);
+}
+
+main.container{
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.caroussel_igm{
+  display: none;
+}
+
+img.caroussel_card{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.img_visible{
+  animation:  0.5s;
+  display: block;
+}
+
+div.caroussel_actions{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-300%);
+}
+
+button.nextBtn,
+button.prevBtn{
+  font-weight: bold;
+  padding: 2em;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.164);
+  color: #ffffff;
+}
+
+button.nextBtn:hover,
+button.prevBtn:hover{
+  background-color: #ffffff76;
+  color:  rgba(0, 0, 0, 0.499);
+  transition: 0.5s;
+}

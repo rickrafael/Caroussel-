@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Caroussel</title>
+</head>
+<body>
+  <!--Container Principal-->
+  <main class="container" >
+    <!--Div pai-->
+    <div data-js="all_cards">
+      <!--Divs filhas de immagens-->
+      <div data-js="caroussel_igm" class="img_visible caroussel_igm">
+        <img src="imgs/pexels-lucie-liz-3165335.jpg" alt="card1" class="caroussel_card ">
+      </div>
+      <div data-js="caroussel_igm" class="caroussel_igm">
+        <img src="imgs/pexels-marko-blazevic-2708981.jpg" alt="card2" class="caroussel_card">
+      </div>
+      <div data-js="caroussel_igm" class="caroussel_igm" >
+        <img src="imgs/pexels-shuvalova-natalia-18223729.jpg" alt="card3" class="caroussel_card">
+      </div>
+   </div>
+   <!--Div de Botões-->
+   <div class="caroussel_actions">
+    <!--Div de botão Prev-->
+    <div data-js="prev_button">
+      <button class="prevBtn"><</button>
+    </div>
+    <!--Div de botão Next-->
+    <div data-js="next_button">
+      <button class="nextBtn"> ></button>
+    </div>
+  </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
