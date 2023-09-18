@@ -6,6 +6,7 @@ const prevBtn = document.querySelector('[data-js="prev_button"]')
 //variável universal Counter
 let correctSlideIndex = 0
 
+//event listeners
 //adicionando Listener de evento
 nextBtn.addEventListener('click', () => {
   if(correctSlideIndex === slides.length-1){
