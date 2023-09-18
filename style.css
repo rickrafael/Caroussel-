@@ -5,9 +5,9 @@ body{
 
 main.container{
   position: relative;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding: 20px;
 }
 
@@ -16,29 +16,40 @@ main.container{
 }
 
 img.caroussel_card{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  width: 70%;
+  height: 70%;
   border-radius: 15px;
 }
 
 .img_visible{
-  animation:  0.5s;
+  animation:fadeVisibility 0.7s;
   display: block;
 }
 
 div.caroussel_actions{
   display: flex;
   width: 100%;
+  position:absolute;;
   justify-content: space-between;
   top: 50%;
-  transform: translateY(-300%);
+  transform: translateY(-50%);
 }
 
-button.nextBtn,
-button.prevBtn{
+button.nextBtn{
+  margin-right: 35px;
+  cursor: pointer;
   font-weight: bold;
-  padding: 2em;
+  padding: 1.5em;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.164);
+  color: #ffffff;
+}
+
+button.prevBtn{
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1.5em;
   border: 0;
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.164);
@@ -50,4 +61,22 @@ button.prevBtn:hover{
   background-color: #ffffff76;
   color:  rgba(0, 0, 0, 0.499);
   transition: 0.5s;
+}
+
+@keyframes fadeVisibility{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    ;
+  }
+}
+
+@media (min-width:1000px){
+  img.caroussel_card{
+    width: 60%;
+    height: 30%;
+    border-radius: 15px;
+  }
 }
